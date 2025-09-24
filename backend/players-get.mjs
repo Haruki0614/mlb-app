@@ -1,6 +1,6 @@
 export const handler = async (event) => {
   try {
-    const japanesePlayerIds = ["660271"]; // 大谷選手
+    const japanesePlayerIds = ["660271", "808967"];
 
     const players = [];
 
@@ -14,7 +14,7 @@ export const handler = async (event) => {
       players.push({
         id: player.id,
         name: player.fullName,
-        team: player.currentTeam ? player.currentTeam.abbreviation : "N/A"
+        
       });
     }
 
